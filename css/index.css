@@ -1,0 +1,91 @@
+/* nav 部分 */
+.nav {
+    position: fixed;
+    height: 68px;
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.04);
+    /*border-radius: 0 0 20px 20px;*/
+    z-index: 1;
+}
+
+.nav-box {
+    width: 89%;
+    height: 100%;
+    /*background-color: pink;*/
+    margin: 0 auto;
+    position: relative;
+}
+
+.swibook-logo {
+    position: absolute;
+    width: 100px;
+    height: 68px;
+    background-color: deeppink;
+    text-align: center;
+    line-height: 68px;
+
+}
+
+.nav a {
+
+}
+
+.nav-login {
+    position: absolute;
+    right: 0;
+    width: 230px;
+    height: 68px;
+    /*background-color: green;*/
+    text-align: center;
+
+}
+
+.nav ul {
+    /*position: absolute;*/
+}
+
+.nav li {
+    position: relative;
+    /*float: left;*/
+    display: inline-block;
+    /*width: 70px;*/
+    height: 68px;
+    /*background-color: skyblue;*/
+    /*border-right: 1px dashed #ccc;*/
+    /* 自动内减 */
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 68px;
+    padding:0 5px;
+}
+
+.nav-login li::after {
+    content: "|"; /* 添加分隔符 */
+    position: absolute;
+    right: -5px; /* 控制分隔符的位置 */
+    color: rgba(0,0,0,.5);
+
+}
+
+.nav-login li:last-child::after {
+    content: ""; /* 移除最后一个 li 的分隔符 */
+}
+
+/*顶部背景图*/
+.bgi {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/bgi.png);
+    background-position: 0 1220px;
+}
+
+.heart {
+    position: absolute;
+    transform: scale(0.3); /* 图片缩小到50% */
+    left: 200px;
+    bottom: -120px;
+
+}
